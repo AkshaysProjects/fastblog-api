@@ -1,5 +1,5 @@
-from pydantic import BaseModel, EmailStr, List, str
-from typing import Optional
+from pydantic import BaseModel, EmailStr
+from typing import Optional, List
 
 
 class UserBase(BaseModel):
@@ -34,3 +34,10 @@ class AuthForm(BaseModel):
 class Token(BaseModel):
     access_token: str
     token_type: str
+
+
+class Blog(BaseModel):
+    title: str
+    content: str
+    author: str
+    tags: Optional[List[str]] = []
