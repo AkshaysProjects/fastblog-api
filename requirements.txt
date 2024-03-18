@@ -2,3 +2,8 @@ fastapi==0.110.0
 uvicorn==0.28.0
 pymongo==4.6.2
 pydantic-settings==2.2.1
+passlib==1.7.4
+typing==3.7.4.3
+email-validator==2.1.1
+python-jose==3.3.0
+python-multipart==0.0.9
